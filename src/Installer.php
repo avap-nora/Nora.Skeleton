@@ -52,6 +52,9 @@ class Installer
         //     $targetJson = $json;
         // }
         // $targetJson->write($composerJson);
+        unset($composerJson['scripts']['post-root-package-install']);
+        unset($composerJson['scripts']['post-create-project-cmd']);
+
         $json->write($composerJson);
         $io->write("<info>composer.json for ".self::$packageName." is created.\n</info>");
     }
