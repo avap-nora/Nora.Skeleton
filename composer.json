@@ -17,8 +17,10 @@
         "target": "./var/test"
     },
     "scripts": {
-        "pre-install-cmd": "echo pre-install-cmd",
-        "pre-update-cmd": "echo pre-install-cmd",
+        "pre-install-cmd": "echo \"pre-install-cmd\\n\"",
+        "pre-update-cmd": "echo \"pre-install-cmd\\n\"",
+        "post-root-package-install": "echo \"post-root-package-install\\n\"",
+        "post-create-project-cmd": "echo \"post-create-project-cmd\\n\"",
         "coverage": [
             "php",
             "-dzend_extension=xdebug.so",
