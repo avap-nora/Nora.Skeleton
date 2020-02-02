@@ -82,5 +82,8 @@
         "phpcs": "Create phpcs.xml",
         "report": "Create php reports",
         "phpdox": "Create phpdox"
+    },
+    "require": {
+        "phpunit/phpunit": "^8.5"
     }
 }
