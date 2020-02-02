@@ -1,5 +1,7 @@
 {
     "name": "nora/skeleton",
+    "description": "php project",
+    "type": "project",
     "authors": [
         {
             "name": "Hajime MATSUMOTO",
