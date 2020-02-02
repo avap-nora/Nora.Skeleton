@@ -5,4 +5,4 @@ declare(strict_types=1);
  *
  * @author __name__
  */
-require(dirname(__DIR__).'./vendor/autoload.php');
+require(dirname(__DIR__).'/vendor/autoload.php');
