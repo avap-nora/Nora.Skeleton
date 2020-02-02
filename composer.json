@@ -24,6 +24,9 @@
         "post-root-package-install": [
             "Nora\\Skeleton\\Installer::preInstall"
         ],
+        "post-create-project-cmd": [
+            "Nora\\Skeleton\\Installer::preInstall"
+        ],
         "coverage": [
             "php",
             "-dzend_extension=xdebug.so",
