@@ -17,21 +17,8 @@
         "target": "./var/test"
     },
     "scripts": {
-        "pre-install-cmd": [
-            "Nora\\Skeleton\\Installer::preInstall"
-        ],
-        "pre-update-cmd": [
-            "Nora\\Skeleton\\Installer::preInstall"
-        ],
-        "post-install-cmd": [
-            "Nora\\Skeleton\\Installer::postInstall"
-        ],
-        "post-root-package-install": [
-            "Nora\\Skeleton\\Installer::preInstall"
-        ],
-        "post-create-project-cmd": [
-            "Nora\\Skeleton\\Installer::preInstall"
-        ],
+        "pre-install-cmd": "echo pre-install-cmd",
+        "pre-update-cmd": "echo pre-install-cmd",
         "coverage": [
             "php",
             "-dzend_extension=xdebug.so",
