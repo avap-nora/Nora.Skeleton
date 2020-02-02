@@ -18,7 +18,7 @@
     },
     "scripts": {
         "post-root-package-install": [
-            "Nora\\Skelton\\Installer::preInstall"
+            "Nora\\Skeleton\\Installer::preInstall"
         ],
         "post-create-project-cmd": "echo \"post-create-project-cmd\\n\"",
         "coverage": [
