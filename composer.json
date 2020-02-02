@@ -18,6 +18,9 @@
         "pre-install-cmd": [
             "Nora\\Skeleton\\Installer::preInstall"
         ],
+        "pre-update-cmd": [
+            "Nora\\Skeleton\\Installer::preInstall"
+        ],
         "post-install-cmd": [
             "Nora\\Skeleton\\Installer::postInstall"
         ],
