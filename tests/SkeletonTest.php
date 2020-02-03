@@ -5,7 +5,7 @@ namespace __Vendor__\__Package__;
 
 use PHPUnit\Framework\TestCase;
 use Nora\Kernel\Bootstrap;
-use __Vendor____Package__Fake\Kernel\Kernel;
+use __Vendor____Package__Fake\Kernel;
 
 class __Package__Test extends TestCase
 {
