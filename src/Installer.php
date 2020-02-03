@@ -41,6 +41,12 @@ class Installer
             self::$packageName,
             $json
         );
+
+        $composerJson['autoload-dev'] = [
+            'psr-4' => [
+                self::$vendor.self::$project.'Fake\\' => "tests/assets/lib"
+            ]
+        ];
         //
         // if (isset($composerJson['skelton']['target'])) {
         //     self::$target = $composerJson['skelton']['target'];
@@ -118,7 +124,8 @@ class Installer
         JsonFile $json
     ) : array {
         $composerJson = $json->read();
-        $composerJson = array_merge($composerJson, [
+        $composerJson = array_merge(
+            $composerJson, [
             'license' => 'proprietary',
             'name' => $packageName,
             'authors' => [
@@ -133,7 +140,8 @@ class Installer
                     "{$vendor}\\{$package}\\" => 'src/'
                 ]
             ],
-        ]);
+            ]
+        );
         unset(
             $composerJson['autoload']['files'],
             $composerJson['scripts']['pre-install-cmd'],
