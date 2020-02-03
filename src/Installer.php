@@ -47,6 +47,7 @@ class Installer
                 self::$vendor.self::$project.'Fake' => "tests/assets/lib"
             ]
         ];
+        var_Dump($composerJson);
         //
         // if (isset($composerJson['skelton']['target'])) {
         //     self::$target = $composerJson['skelton']['target'];
