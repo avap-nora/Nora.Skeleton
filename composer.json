@@ -2,6 +2,7 @@
     "name": "avap/nora-php-skeleton",
     "description": "php project",
     "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Hajime MATSUMOTO",
