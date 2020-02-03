@@ -18,7 +18,8 @@
             "Nora\\Skeleton\\Installer::preInstall"
         ],
         "post-create-project-cmd": [
-            "Nora\\Skeleton\\Installer::postInstall"
+            "Nora\\Skeleton\\Installer::postInstall",
+            "composer update"
         ],
         "coverage": [
             "php -dzend_extension=xdebug.so ./bin/phpunit -c ./settings/phpunit.report.xml"
@@ -57,6 +58,10 @@
         "phpdox"   : "Create phpdox"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.5"
-    }
+        "phpunit/phpunit": "^8.5",
+        "nora/framework": "dev-master"
+    },
+    "repositories": [
+        { "type": "vcs", "url": "https://avap.codes/nora/lib/Nora.Framework.git" }
+    ]
 }
