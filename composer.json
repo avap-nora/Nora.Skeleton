@@ -20,7 +20,8 @@
         ],
         "post-create-project-cmd": [
             "Nora\\Skeleton\\Installer::postInstall",
-            "composer update"
+            "composer update",
+            "phive install"
         ],
         "coverage": [
             "php -dzend_extension=xdebug.so ./bin/phpunit -c ./settings/phpunit.report.xml"
