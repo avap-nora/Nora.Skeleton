@@ -69,5 +69,9 @@
         { "type": "vcs", "url": "https://avap.codes/nora/lib/Nora.Business.git" },
         { "type": "vcs", "url": "https://avap.codes/nora/lib/Nora.Utility.git" },
         { "type": "vcs", "url": "https://avap.codes/nora/lib/Nora.Architecture.git" }
-    ]
+    ],
+    "require": {
+        "psr/log": "^1.1",
+        "psr/cache": "^1.0"
+    }
 }
