@@ -4,11 +4,18 @@ declare(strict_types=1);
 namespace __Vendor__\__Package__;
 
 use PHPUnit\Framework\TestCase;
+use Nora\Framework\Bootstrap;
 
 class __Package__Test extends TestCase
 {
-    public function testIsTrue()
+    /**
+     * @test
+     */
+    public function モジュールの呼び出し()
     {
-        $this->assertInstanceOf(__Package__::class, new __Package__());
+        $kernel = (new Bootstrap)('__Vendor____Package__Fake', 'app-test');
+
+        $this->assertInstanceOf(__Vendor____Package__Fake\Kernel\Kernel::class, $kernel);
+        return $kernel;
     }
 }
