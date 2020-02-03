@@ -1,5 +1,5 @@
 <?php
-namespace __Vendor____Package__\Kernel;
+namespace __Vendor____Package__Fake\Kernel;
 
 use Nora\Framework\Kernel\KernelInterface;
 

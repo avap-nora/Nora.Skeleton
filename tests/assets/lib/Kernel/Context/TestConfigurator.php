@@ -1,5 +1,5 @@
 <?php
-namespace __Vendor____Package__\Kernel\Context;
+namespace __Vendor____Package__Fake\Kernel\Context;
 
 use Nora\Framework\Kernel\AbstractKernelConfigurator;
 
