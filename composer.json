@@ -64,6 +64,7 @@
         "avap/nora-php-framework": "@dev",
         "avap/nora-php-business": "@dev",
         "avap/nora-php-utility": "@dev",
+        "avap/nora-php-kernel": "@dev",
         "avap/nora-php-architecture": "@dev"
     },
     "require": {
