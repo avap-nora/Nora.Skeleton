@@ -5,6 +5,7 @@ namespace __Vendor__\__Package__;
 
 use PHPUnit\Framework\TestCase;
 use Nora\Framework\Bootstrap;
+use __Vendor____Package__Fake\Kernel\Kernel;
 
 class __Package__Test extends TestCase
 {
@@ -15,7 +16,7 @@ class __Package__Test extends TestCase
     {
         $kernel = (new Bootstrap)('__Vendor____Package__Fake', 'app-test');
 
-        $this->assertInstanceOf(__Vendor____Package__Fake\Kernel\Kernel::class, $kernel);
+        $this->assertInstanceOf(Kernel::class, $kernel);
         return $kernel;
     }
 }
