@@ -1,5 +1,5 @@
 <?php
-namespace __Vendor____Package__Fake\Kernel\Context;
+namespace __Vendor____Package__Fake\Context;
 
 use Nora\Kernel\AbstractKernelModule;
 
